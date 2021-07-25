@@ -130,15 +130,13 @@ ul {
   align-items: center;
 }
 
-.header {
-  margin-bottom: 
-  height: 0px;
-  border: 1px solid #ECECEC;
-}
-
+ 
 .header .container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid;  
+  color: var(--header-color); 
+
 }
 
 .navigation-menu {
@@ -181,14 +179,41 @@ ul {
 
 .current {
   position: relative; 
-  magin-bottom: 32px; 
-  border-radius: 2px; 
+  color: var(--main-color-link-hover-focus);
+}
+
+/* .current:after {
+  position: relative; 
+  display: block; 
+  content: "";
   width: 53px;
   height: 4px;
-  color: var(--main-color-link-hover-focus);
-  background-color: var(--main-color-link-hover-focus);
+  margin-bottom: 30px;  
+  background-color: #2196F3;
+  border-radius: 2px;
+} */
 
+.current:after {
+  position: absolute; 
+  display: block; 
+  content: "";
+  width: 53px;
+  height: 4px;
+  background-color: #2196F3;
+  border-radius: 2px;
 }
+
+/* .current:hover:after {
+  width: 100%; 
+ 
+}
+ */
+.current:hover:after {
+  width: 100%; 
+  margin-bottom: 23px;
+ 
+}
+
 
 /*========== NAV PHONE AND MAIL/ SOCIAL ICONS ==========*/
 
