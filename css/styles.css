@@ -595,13 +595,13 @@ ul {
   flex-flow: row wrap;
 }
 
-.portfolio-list .portfolio-item {
-  padding: 10px;
+.portfolio .portfolio-item {
+  margin: 10px;
 }
 
 
-.portfolio .portfolio-item:hover,
-.portfolio .portfolio-item:focus  {
+.portfolio-list .portfolio-item:hover,
+.portfolio-list .portfolio-item:focus  {
 
   background: #FFFFFF;
   box-sizing: border-box;
