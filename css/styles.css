@@ -40,6 +40,7 @@ h6 {
   --social-icon-footer-background: rgba(255, 255, 255, 0.1);
   --social-company-icon-color: #afb1b8;
   --social-icon-footer-color: #ffffff;
+  --hover-portfolio-color: rgba(33, 150, 243, 0.9);
 }
 
 ul,
@@ -252,16 +253,13 @@ ul {
   color: var(--main-color-link);
 }
 
-/* sprawdź                                            */
+/* sprawdź    */
 .contact-item-icons {
   width: 16px;
   height: 20px;
   margin-right: 10px;
 }
 
-/*.contact-item-icons {
-  
-}*/
 
 .header-mail-address:hover,
 .header-mail-address:focus {
@@ -597,23 +595,61 @@ ul {
 
 .portfolio .portfolio-item {
   margin: 10px;
+   
+  
 }
 
+.portfolio-item {
+   
+}
 
 .portfolio-list .portfolio-item:hover,
 .portfolio-list .portfolio-item:focus  {
 
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-item:hover {
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: var(--hover-portfolio-color); 
+  
+}
 
 
-.item-box {
+
+
+.portfolio-item .item-box {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  font-size: 18px; 
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  transform: scaleY(0);
+  visibility: hidden;
+  transform-origin: bottom;
+  background-color: var(--hover-portfolio-color);
+  
+
 }
+
+.portfolio-item .item-box:hover,
+.portfolio-item .item-box:focus {
+  transition: box-shadow;
+  transition-duration: 250ms;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+
+
 
 .portfolio-list-title {
   font-weight: 700;
