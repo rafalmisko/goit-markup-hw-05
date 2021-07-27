@@ -637,6 +637,8 @@ overflow: hidden;
 .portfolio-container {
   position: relative;
   overflow: hidden;
+  width: 370px;
+height: 294px;
 }
 
 .item-overlay{
@@ -661,7 +663,9 @@ overflow: hidden;
 
 }
 
-.portfolio-container:hover .item-overlay  {
+.portfolio-container:hover .item-overlay,
+.portfolio-sub-container:hover .item-overlay
+  {
   
   transform: translateX(0); 
 
