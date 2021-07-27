@@ -637,8 +637,7 @@ overflow: hidden;
 .portfolio-container {
   position: relative;
   overflow: hidden;
-  width: 370px;
-height: 294px;
+   
 }
 
 .item-overlay{
