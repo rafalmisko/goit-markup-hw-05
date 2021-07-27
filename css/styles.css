@@ -41,6 +41,7 @@ h6 {
   --social-company-icon-color: #afb1b8;
   --social-icon-footer-color: #ffffff;
   --hover-portfolio-color: rgba(33, 150, 243, 0.9);
+  --borer-color-first: #eeeeee; 
 }
 
 ul,
@@ -554,7 +555,7 @@ ul {
 .our-team-social-items:hover .our-team-social-link,
 .our-team-social-items:focus .our-team-social-link
 {
-  background-color: var(--main-color-link-hover-focus);
+  background-color: var( --borer-color-first);
   fill: #ffffff;
   color: #ffffff;
    
@@ -579,17 +580,17 @@ ul {
   flex-flow: row wrap;
 }
 
-.portfolio-sub-container {
+/*.portfolio-sub-container {
 position: relative;
 overflow: hidden;
 
-}
+}*/
 
 .portfolio-sub-container {
   
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--borer-color-first);
+  border-right: 1px solid var(--borer-color-first);
+  border-bottom: 1px solid var(--borer-color-first);
 
 }
 
