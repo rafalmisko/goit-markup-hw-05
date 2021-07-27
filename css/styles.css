@@ -573,11 +573,12 @@ ul {
 
 .portfolio-list {
   list-style: none;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .portfolio-list {
-  display: flex;
-  flex-flow: row wrap;
+  
 }
 
 /*.portfolio-sub-container {
@@ -603,8 +604,7 @@ overflow: hidden;
   letter-spacing: 0.06em;
   padding-top: 20px;
   padding-right: 24px;
-  padding-bottom: 4px;
-  padding-left: 24px; 
+   padding-left: 24px; 
   color: var(--main-color);
 }
 
