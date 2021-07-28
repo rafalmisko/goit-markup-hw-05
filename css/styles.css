@@ -915,7 +915,8 @@ overflow: hidden;
 }
 
 .is-hidden .modal {
- transform: scale(0.8);
+ /*transform: scale(0.8);*/
+  transform: translate(-50%,-200%);
 }
  
 
