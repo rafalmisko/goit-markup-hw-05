@@ -42,6 +42,7 @@ h6 {
   --social-icon-footer-color: #ffffff;
   --hover-portfolio-color: rgba(33, 150, 243, 0.9);
   --borer-color-first: #eeeeee; 
+  --border-close-button: rgba(0,0,0,0.1); 
 }
 
 ul,
@@ -910,7 +911,8 @@ overflow: hidden;
 	min-height: 581px;
 	background-color: #ffffff; 
   transition: transform 1s ease-out;
-   
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; 
 
 }
 
@@ -928,7 +930,8 @@ overflow: hidden;
 	width: 30px;
 	height: 30px;
 	background-color: #fff;
-	border: 1px solid rgba(0,0,0,0.1); 
+	border: 1px solid;
+  border-color: var(--border-close-button);
 	border-radius: 50%;
 	cursor: pointer; 
 
